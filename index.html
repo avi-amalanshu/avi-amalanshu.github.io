@@ -1,105 +1,174 @@
 <!DOCTYPE html>
 <html lang = "en">
+<style>
+body,html{
+    height:100%;
+}
+</style>
 	<head>
 		<meta charset = "utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 		<meta name = "viewport" content = "width=device-width,initial-scale=1">
 	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="page-header">
-			<h2>avi-amalanshu's website</h2>
-			<p>polymath in-training</p>
+	<div class="mx-auto d-flex flex-column min-vh-100 justify-content-center align-items-center p-5", style="width:75%">
+		<div class="row">
+			<div class="col-sm-3 fixed-bottom">
+				<div class="container w-50">
+					<img src="image.jpg" class="img-fluid rounded-circle">
+				</div>
+					<h1 class="display-4 text-center"> Avi Amalanshu </h1>
+					<p class="lead text-center"> Undergraduate AI Researcher </p>
+					<div class="container">
+						<hr>
+					</div>
+					<ul class="list-unstyled text-center">
+						<li>3rd-year undergrad at IIT Kharagpur</li>
+						<li>Autonomous Ground Vehicle Research Group</li>
+					</ul>
+						<p><small>
+							Computer Vision and Image Processing &#8226; 
+							Real-Time Systems Design &#8226; 
+							Intelligent Systems Design &#8226; 
+							AI for Neuroscience and Systems Biology
+						</small></p>
+					<ul class="list">
+						<li><a href="cv.pdf">CV</a></li>
+						<li><a href="mailto:avi.amalanshu@kgpian.iitkgp.ac.in">Email</a></li>
+						<li><a href="https://linkedin.com/in/avi-amalanshu">LinkedIn</a></li>
+						<li><a href="#news">News</a></li>
+						<li><a href="#skills">Stuff I'm good at</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li>Blog (coming soon)</li>
+					</ul>
+				</div>
 			</div>
-			<div class="jumbotron">
-				<h1>welcome to my website!</h1>
-				<p>hello, I'm a second-year undergraduate student at the Indian Institute of Technology, Kharagpur (IIT-KGP) interested in computer vision, automation, and more broadly artificial intelligence, machine learning and deep learning.</p>
-				<p>at IIT-KGP, I'm involved with the Autonomous Ground Vehicle (AGV) research group, where I'm a part of the "deep learning - trajectory" module of the software team. I'm also involved with the KGP Gaming Society, where I'm a part of the core and design teams.</p>
+			<div class="col-sm-6 mt-5">
+				<div class="row mt-4"><p>
+				I am pursuing a dual-degree (Bachelor and Master of Technology) from the <a href="https://www.ecdept.iitkgp.ac.in">Department of Electronics & Electrical Communication
+				Engineering</a> at Indian Institute of Technology Kharagpur. I plan to specialize in Vision and Intelligent
+				Systems for my Masters (full 5 year curriculum <a href="https://erp.iitkgp.ac.in/ERPWebServices/curricula/CurriculaSubjectsList.jsp?stuType=UG&splCode=EC9&curr_type=NEW">here</a>). 
+				I also plan to complete a minor degree in <a href="https://cse.iitkgp.ac.in">Computer Science & Engineering</a>. I am a member of the Autonomous Ground
+				Vehicle (<a href="https://www.agv.iitkgp.ac.in">AGV</a>) research group here at IIT Kharagpur where I use deep learning on problems of robotic perception and path planning. In particular, I work on 
+				human and vehicle trajectory prediction.<br>
+				My research interests span AI and Systems Design and their interdisciplinary applications, particularly in autonomous and biological/cognitive/social systems. My goal is to
+				contribute to cutting-edge work that helps us understand signals in ourselves and our surroundings, and improve the way we interact with them.
+				</p></div>
+				<div class="row mt-4" id="news">
+				<h2>News</h2>
+					<div class="row">
+  						<dt class="col-sm-3">[Sep '22]</dt>
+  						<dd class="col-sm-9">I am looking for remote research internships in Vision, RL, and/or biomedical/neuronal signal processing.</dd>
+  						<dt class="col-sm-3">[Aug '22]</dt>
+  						<dd class="col-sm-9">Invited to present a poster at NeurIPS 2022 based on our MLRC report.</dd>
+  						<dt class="col-sm-3">[Aug '22]</dt>
+  						<dd class="col-sm-9">Our MLRC report <a href="https://rescience.github.io/bibliography/Shukla_2022.html">has been published</a> in this month's ReScience C journal.</dd>
+  						<dt class="col-sm-3">[May '22]</dt>
+  						<dd class="col-sm-9">Our MLRC report on "[RE] From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting" has been accepted for publication in <a href="https://rescience.github.io">ReScience</a>.</dd>
+  						<dt class="col-sm-3">[Oct '21]</dt>
+  						<dd class="col-sm-9">Started working on the Trajectory Prediction module at AGV.</dd>
+  						<dt class="col-sm-3">[Jul '21]</dt>
+  						<dd class="col-sm-9">Branch change to E&ECE from Biotech approved, ranked #27 institute-wide.</dd>
+  						<dt class="col-sm-3">[May '21]</dt>
+  						<dd class="col-sm-9">Selected for the software team at AGV.</dd>
+  						<dt class="col-sm-3">[Dec '20]</dt>
+  						<dd class="col-sm-9">Joined IIT Kharagpur as an undergraduate student.</dd>
+					</div>
+				</div>
+				<div class="row mt-4" id="skills">
+				<h2>Stuff I'm good at</h2>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="card">
+								<img src="https://media.istockphoto.com/vectors/deep-neural-network-vector-illustration-with-light-green-and-blue-vector-id1016547686?k=20&m=1016547686&s=612x612&w=0&h=tPkX73z6SRatunRLAPZm-l13di0rI3Vx3KpkzqGfebo=" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">Deep Learning</h5>
+								<p class="card-text">I work with CNNs, RNNs GNN/GATs, and transformers in for time-sequence visual data. I'm also looking into RL and generative networks.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card h-100">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Programming_code.jpg" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">Programming</h5>
+								<p class="card-text">I'm proficient in C/C++, Python and MATLAB. I've also got some knowledge of Rust and Verilog. I regularly use libraries like OpenCV, PyTorch, TensorFlow, SciKit.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card h-100">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Machine_Vision_System.jpg" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">Computer Vision</h5>
+								<p class="card-text">I've worked with classical Computer Vision and Image Processing techniques, particularly in their application in autonomous robots.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-sm-4">
+							<div class="card h-100">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Open_Science_-_adapting_the_research_cycle_-_animated.gif" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">Research</h5>
+								<p class="card-text">I've worked on multiple research projects. I have experience in conducting literary review, ablation, and writing LaTeX reports.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card h-100">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Factory_Automation_Robotics_Palettizing_Bread.jpg/2560px-Factory_Automation_Robotics_Palettizing_Bread.jpg" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">Robotics</h5>
+								<p class="card-text">I design robotic software. I've got knowledge in dynamical control systems (LQR, Kalmann filters), real-time systems (RISC), path planning (RL-based, graph-based, Frenet) and SLAM.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="card h-100">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Neuronal_activity_DARPA.jpg" class="card-img-top" style="height:17vh">
+								<div class="card-body">
+								<h5 class="card-title">The Brain</h5>
+								<p class="card-text">I've developed an interest in understanding how our brain works. I'm investigating ways to use my training in Electrical and Computer Engineering on problems in neuroscience and social scienece.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="row mt-4" id="projects">
+				<h2>Projects</h2>
+				<h4>Yellow indicates a publication.</h4> 
+					<div class="card p-0 mt-3">
+  						<h5 class="card-header bg-warning">March 2022</h5>
+  						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-10">
+    									<h5 class="card-title">Review of "From Goals, Waypoints & Paths To Long Term Human Trajectory Forecasting"</h5>
+    									<p class="card-text">As a part of Machine Learning Reproducibility Challenge 2021. Literary review, selection of, reproduction of, and innovation upon a state-of-the-art deep learning paper. We showed the paper's claims to be genuine and robust, and discovered and demonstrated the notable transfer learning capabilities of the CNN-based model.</p>
+    									<a href="#" class="btn btn-primary">Report</a> <a href="#" class="btn btn-primary">Code</a>
+								</div>
+								<div class="col-sm-2 justify-content-center align-items-center">
+										<img src="mlrc.png" class="img-fluid rounded">
+								</div>
+							</div>
+  						</div>
+					</div>
+					<div class="card p-0 mt-3">
+  						<h5 class="card-header">November 2021</h5>
+  						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-10">
+    									<h5 class="card-title">University Rover Challenge 2022</h5>
+    									<p class="card-text">Worked on using computer vision for autonomous navigation. OpenCV and ArUco tag detection. The project was pulled due to funding issues.</p>
+    									<a href="#" class="btn btn-primary">Report</a> <a href="#" class="btn btn-primary">Code</a>
+								</div>
+								<div class="col-sm-2 justify-content-center align-items-center">
+										<img src="mlrc.png" class="img-fluid rounded">
+								</div>
+							</div>
+  						</div>
+					</div>
+				</div>
 			</div>
-		<div class="alert alert-info">
-			<strong>men at work:</strong> this website is currently under construction, you may encounter placeholders and incomplete information!
 		</div>
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-4">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>academic interests</p>
-						</div>
-						<div class="panel-body"style="height:293px">
-							<p>as mentioned in the intro above, my interests so far are related to computer vision, and artificial intelligence at large.</p>
-							<p>I also plan to explore the fields of computer architecture, embedded systems, cybersecurity and IoT in the future.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>skills</p>
-						</div>
-						<div class="panel-body"style="height:293px">
-							<p>apart from being a musician and a menace on the basketball court, I'm an avid programmer with an intermediate skill level in C, C++ and Python. I'm also a novice at SQL, MATLAB, Octave and Java.</p>
-							<p>in the near future, I plan to get into Rust, and perhaps other languages such as Go and Scala.</p>
-							<p>I have worked on some projects with OpenCV and SciKit, and have some experience with ROS and TensorFlow, too.</p>
-							<p>I prioritize robustness and efficiency while writing programs.</p>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>coursework</p>
-						</div>
-						<div class="panel-body"style="height:293px">
-							<p>I'm enrolled in the dual degree course offered by the department of electronics and communication engineering at IIT Kharagpur.</p>
-							<p>I'm expecting to graduate in 2025 with both my bachelor and master of technology degree. I hope to pursue a minor degree in computer science and engineering, too.</p>
-							<p>Click the button below to see more about my coursework.</p>
-                                                        <a href="coursework.html" class="btn btn-primary" role="button">Coursework</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>projects</p>
-						</div>
-						<div class="panel-body"style="height:218px">
-							<p>upcoming projects will be documented on my github.</p>
-							<p>my most recent project was a <a href="https://github.com/avi-amalanshu/DIY-Project-Hand-Controlled-Bot">hand-gesture controlled camera robot using OpenCV and mediapipe</a>. This was my group's final project for the DIY course in my first year at IIT Kharagpur. Although it was intended for the healthcare sector (to reduce doctors' and nurses' exposure to disease), it has a very wide range of potential applications.</p>
-							<p>click the link below to access it.</p>
-							<a href="https://www.github.com/avi-amalanshu" class="btn btn-primary" role="button">My GitHub</a>
-						</div>
-					</div>
-				</div>
-				<!--<div class="col-sm-4">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>publications</p>
-						</div>
-						<div class="panel-body">
-							<p>jeez, I just finished my first year of college. Hop off my case.</p>
-						</div>
-					</div>
-				</div>-->
-				<div class="col-sm-6">
-					<div class="panel panel-primary">
-						<div class="panel-heading">
-							<p>contact details and internet presence</p>
-						</div>
-						<div class="panel-body"style="height:218px">
-							<p>although I have various social media accounts, I am not active on any of them. They exist mainly for the purpose of redirecting traffic here.</p>
-							<p>perhaps a mutually agreeable way to contact me would be to e-mail me at "<"fname">"_"<"lname">"@engineer.com</p>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
-	<footer>
-                <hr>
-                <a href="github.com/avi-amalanshu" class="btn btn-link" role="button">github</a> <a href="http://www.agv.iitkgp.ac.in/index.php" class="btn btn-link" role="button">agv (old)</a> <a href="https://in.linkedin.com/in/avi-amalanshu-ab1a89219" class="btn btn-link" role="button">linkedin (not very active)</a> <a href="www.iitkgp.ac.in" class="btn btn-link" role="button">iitkgp</a> <a href="http://www.ecdept.iitkgp.ac.in/" class="btn btn-link" role="button">iitkgp e&ece (outdated)</a> <a href="http://cse.iitkgp.ac.in/" class="btn btn-link" role="button">iitkgp cse</a> <a href="#" class="btn btn-link" role="button">dog (under construction)</a>
-        </footer>
+	</div>
 </html>
