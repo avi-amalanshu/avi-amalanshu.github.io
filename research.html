@@ -45,31 +45,43 @@
 			<div class="col-sm-8">
 				<div class="row" id="research">
 				<h1>Research Statement</h1>
+                <p> 
+                    Broadly, my interest is in designing online and distributed/federated algorithms and systems for 
+                    deep learning and reinforcement learning. I am also generally interested in communication networks
+                    and distributed systems.
+                    On the application side, I like to use domain knowledge to build robust models for macro/microeconomic tasks.
+                    By this I mean prediction and control with large-scale and/or safety-critical interactions like autonomous driving,
+                    financial markets, biophysical interactions, biomedical imaging, etc.
+                </p>
 				<p>
-                    I am interested in developing algorithms that enable online and distributed/federated learning with theoretical guarantees. I also
-                    work on applications in context-rich applications, e.g. scene understanding, robotic trajectory prediction, financial markets, etc.
+                    Over the past few decades, much of deep learning research has focused on building increasingly 
+                    complex architectures that can learn general hypotheses for difficult tasks. This is significant
+                    as a proof-of-concept for AI. Moreover, pushing boundaries toward and past expert human performance
+                    has lead to breakthroughs in critical fields like healthcare. However, increasing complexity
+                    brings diminishing gains from computational resources and data. My research focus 
+                    is on developing methodology that can guarantee similar model performance in a real-time, online and
+                    distributed manner. From a research and engineering perspective, this opens up a lot of flexbility in using compute
+                    and deploying models. It also can help democratize AI, and learn fairer and more general models. Here are some
+                    questions I am investigating (or planning to) as an undergrad: 
                 </p>
                 <p>
-                    One question I am invested in: How do we build an alternative to end-to-end training with backprop that is a plausible model
+                    How do we build an alternative to end-to-end training with backprop that is a plausible model
                     of how the brain learns? Such a regime would yield some desirable characteristics. Local plasticity, like 
                     observed in the cortical sheet, would allow better model parallelism while improving time and space complexity.
+                    The brain learns without manual labeling and in a contrastive manner. Self-supervised contrastive learning algorithms
+                    can learn rich feature representations online from a very wide real-world data distribution. Applications to generative modelling
+                    can lead to much faster and more abstract generative networks.
+                    <br>
+                    This area has seen a surge of interest lately, but most proposals do not scale well to deep models or hard datasets.
                 </p>
                 <p>
                     Another fascinating direction: Can we analyze communication constraints between neurons of a neural network to build an
-                    explainable model? If so, how do we leverage that to build better algorithms and architectures? This also lends to a 
-                    discussion on the information theoretic consequences of generative models and their usage as coding techniques.
+                    explainable model of deep learning? If so, how do we leverage that to build better algorithms and architectures? This also lends to a 
+                    discussion on the information theoretic consequences of generative models and their usage as privacy-preserving coding techniques.
                 </p>
                 <p>
-                    There is a class of problems based on optimizing probability of error under some information constraint, and
-                    engineering that information constraint itself using optimization and game theory. These problems are pervasive and far reaching 
-                    (just a few examples are machine learning: inference/reinforcement, digital communications: detection/channel 
-                    allocation, robotics: 
-                    trajectory prediction/path planning, economics: macroeconomics/microeconomics).
-                    <br>
-                    My general interest is in designing efficient and distributed algorithms for agents in such problems.
-                    I am excited about bridging the theoretical gaps between these areas. Extending decentralization to some
-                    collocated paradigms is especially intriguing. This will make intelligent systems more accessible. It 
-                    will also allow us to leverage wide scale computation to efficiently construct fairer and more robust models.
+                   On the application side, is it possible for inverse reinforcement learning to replace bulky recurrent/attention-based models for robotic
+                   trajectory prediction? 
                 </p>
                 <p>
                     An emerging field that may benefit from all these efforts is neuroeconomics.
