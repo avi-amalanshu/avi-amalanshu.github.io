@@ -68,12 +68,16 @@
                     How do we build an alternative to end-to-end training with backprop that is a plausible model
                     of how the brain learns? Such a regime would yield some desirable characteristics. Local plasticity, like 
                     observed in the cortical sheet, would allow better model parallelism while improving time and space complexity.
-                    The brain learns without manual labeling and in a contrastive manner. Self-supervised contrastive learning algorithms
-                    can learn rich feature representations online from a very wide real-world data distribution. Applications to generative modelling
+                    The brain learns without manual labeling and in a contrastive manner. This paradigm can allow machines to learn rich feature representations online from a very wide real-world data distribution. Applications to generative modelling
                     can lead to much faster and more abstract generative networks.
                     <br>
                     This area has seen a surge of interest lately, but most proposals do not scale well to deep models or hard datasets.
                 </p>
+							      Another important question for distributed learning (and, frankly, machine learning in general) is distribution
+							      shift. Not only should a distributed/federated learning system be able to learn from divergent distributions,
+							      but an edge application should be able to make sound predictions in its own environment which may be unseen by the
+							      model. Since preventing overfitting during training can only go so far with performance constraints, distribution
+							      alignment is a better approach.
                 <p>
                     Another fascinating direction: Can we analyze communication constraints between neurons of a neural network to build an
                     explainable model of deep learning? If so, how do we leverage that to build better algorithms and architectures? This also lends to a 
@@ -81,7 +85,8 @@
                 </p>
                 <p>
                    On the application side, is it possible for inverse reinforcement learning to replace bulky recurrent/attention-based models for robotic
-                   trajectory prediction? 
+                   trajectory prediction? This can be directly tied into reinforcement learning-based path planning algorithms, especially in swarm robotics where
+							      efficient communication allows an ego agent to know reward functions from at least some other agents.
                 </p>
                 <p>
                     An emerging field that may benefit from all these efforts is neuroeconomics.
