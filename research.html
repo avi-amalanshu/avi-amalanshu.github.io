@@ -50,55 +50,43 @@
 			<div class="col-sm-8">
 				<div class="row" id="research">
 				<h1>Research Statement</h1>
-                <p> 
-                    Broadly, my interest is in designing online and distributed/federated algorithms and systems for 
-                    deep learning and reinforcement learning. I am also generally interested in communication networks
-                    and distributed systems.
-                    On the application side, I like to use domain knowledge to build robust models for macro/microeconomic tasks.
-                    By this I mean prediction and control with large-scale and/or safety-critical interactions like autonomous driving,
-                    financial markets, biophysical interactions, biomedical imaging, etc.
-                </p>
+		        <p> 
+		            I am interested broadly in computational intelligence and distributed systems. I work on online and distributed/federated algorithms and systems 
+					for deep learning and reinforcement learning. I am also interested in generative modelling and unsupervised learning. Generally fascinated by 
+					decentralized/P2P systems. 
+				</p>
 				<p>
-                    Over the past few decades, much of deep learning research has focused on building increasingly 
-                    complex architectures that can learn general hypotheses for difficult tasks. This is significant
-                    as a proof-of-concept for AI. Moreover, pushing boundaries toward and past expert human performance
-                    has lead to breakthroughs in critical fields like healthcare. However, increasing complexity
-                    brings diminishing gains from computational resources and data. My research focus 
-                    is on developing methodology that can guarantee similar model performance in a real-time, online and
-                    distributed manner. From a research and engineering perspective, this opens up a lot of flexbility in using compute
-                    and deploying models. It also can help democratize AI, and learn fairer and more general models. Here are some
-                    questions I am investigating (or planning to) as an undergrad: 
-                </p>
-                <p>
-                    How do we build an alternative to end-to-end training with backprop that is a plausible model
-                    of how the brain learns? Such a regime would yield some desirable characteristics. Local plasticity, like 
-                    observed in the cortical sheet, would allow better model parallelism while improving time and space complexity.
-                    The brain learns without manual labeling and in a contrastive manner. This paradigm can allow machines to learn rich feature representations online from a very wide real-world data distribution. Applications to generative modelling
-                    can lead to much faster and more abstract generative networks.
-                    <br>
-                    This area has seen a surge of interest lately, but most proposals do not scale well to deep models or hard datasets.
-                </p>
-							      <p>
-							      Another important question for distributed learning (and, frankly, machine learning in general) is distribution
-							      shift. Not only should a distributed/federated learning system be able to learn from divergent distributions,
-							      but an edge application should be able to make sound predictions in its own environment which may be unseen by the
-							      model. Since preventing overfitting during training can only go so far with performance constraints, distribution
-							      alignment is a better approach.
-							      </p>
-                <p>
-                    Another fascinating direction: Can we analyze communication constraints between neurons of a neural network to build an
-                    explainable model of deep learning? If so, how do we leverage that to build better algorithms and architectures? This also lends to a 
-                    discussion on the information theoretic consequences of generative models and their usage as privacy-preserving coding techniques.
-                </p>
-                <p>
-                   On the application side, is it possible for inverse reinforcement learning to replace bulky recurrent/attention-based models for robotic
-                   trajectory prediction? This can be directly tied into reinforcement learning-based path planning algorithms, especially in swarm robotics where
-							      efficient communication allows an ego agent to know reward functions from at least some other agents.
-                </p>
-                <p>
-                    An emerging field that may benefit from all these efforts is neuroeconomics.
-                </p>
+					My interest in communication/information theory and experience running a cash-strapped undergrad research group have played a major role in my
+					interest in parallel, distributed and real-time/online learning with the goal of leveraging large scale, personal computing to learn deep models 
+					in the wild. My current interests follow these broad themes:
+				</p>
+                <h3>Computational Intelligence</h3>
+				<p>
+					
+					I am fond of what I call "nature-inspired" algorithms-- bioplausible learning, evolutionary computation, neural ODEs, PINNs, etc. It's not 
+					necessarily good practice to restrict our imagination to our continuous, probabilistic world in matters regarding our programmable digital 
+					computers. But, they serve an important scientific purpose: as models of adaptation in ourselves and our surroundings. Natural systems 
+					are a great source of inspiration. Biologically plausible learning eliminates synchronization and memory constraints which enable better 
+					parallelism and pipelining. Energy-based models (though perhaps on mortal, neuromorphic hardware) may soon match MLPs with backpropagation, 
+					except far more efficiently. And indeed, none of today's life-saving ML applications would exist had we discarded neural networks to pursue 
+					symbolic AI.
+				</p>
+				<p>
+					A problem I am interested in: How do we model top-down attention in the brain as a biologically plausible feedback mechanism for ANNs? The 
+					feedback may allow scalable representation learning using local computation that is comparable to global backprop.
+				</p>
+                <h3>Statistical Machine Learning and Information Theory</h3>
+				<p>
+					I am interested in some statistical aspects of learning theory. My bachelor's thesis is in the area of distributed hypothesis testing. Another fascinating direction: Can we analyze communication constraints between neurons in an ANN to 
+					build an explainable model of deep learning? If so, how do we leverage that to build better algorithms and architectures? This also lends to a discussion on the information theoretic consequences of generative models and their usage with secure coding techniques.
+				</p>
+                <h3>Applications in complex multi-agent environments</h3>
+				<p>
+					On the application side, I like to use domain knowledge to build robust models for economic and almost-economic agents.  By this I mean prediction and control in large-scale and/or safety-critical interactions like autonomous driving, financial markets, biophysical 
+					interactions, biomedical imaging, etc. Another problem I am hoping to dive into: Can we use inverse RL to to replace bulky RNN/attention models for robotic trajectory prediction?
+		        </p>
 				</div>
+
                 <div class="row" id="topics">
                     <h1>Topics I've Worked On</h1>
                     <h3>Localized Deep Learning</h3>
