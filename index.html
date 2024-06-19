@@ -1,67 +1,368 @@
-<title> Avi Amalanshu </title>
-<style>
-    body {
-        animation: fadeInAnimation ease 3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    @keyframes fadeInAnimation {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-</style>
+<!DOCTYPE html>
+<html>
 <head>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<meta charset="utf-8">
-	<meta name="viewport", content="width=device-width", initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport", content="width=device-width", initial-scale=1">
+  <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+  <title>Avi Amalanshu</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Lato');
+
+    html * {
+      box-sizing: border-box;
+      /*scroll-snap-type: y mandatory;*/
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.75);
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      backdrop-filter: blur(1rem);
+      top: 0;
+      z-index: 1000;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      overflow-x: clip;
+    }
+
+    @keyframes headerImgFade {
+      25% { opacity: 0.4; }
+      85%, 100% { opacity: 0; scale: 3; filter: blur(1rem);}
+    }
+
+    header > img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      animation: headerImgFade 0.1ms linear forwards;
+      animation-timeline: view();
+      animation-range: exit;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; }
+    }
+
+    .header-content {
+      position:relative;
+      vertical-align: middle;
+      overflow-x: clip;
+      padding-block: 7rem;
+      margin-block-end: 3rem;
+      animation: fadeOut 0.1ms linear forwards;
+      animation-timeline: view();
+      animation-range: exit;
+    }
+
+    .header-content > h1 {
+      font-size: 5vw;
+      text-align: center;
+      text-transform: full-width;
+      color: white;
+    }
+
+    .header-content > p {
+      font-size: 1.25vw;
+      text-align: center;
+      text-transform: full-width;
+      color: white;
+    }
+
+    section {
+      block-size: 100%;
+      width: 60%;
+      height: 100vh;
+      margin: 0 auto;
+      /*scroll-snap-align: start;*/
+      /*scroll-snap-stop: always;*/
+
+      /*display: flex;*/
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes fadeIn {
+      to { scale: 1; opacity: 1; }
+    }
+
+    section > img {
+      display: block;
+      max-width: 33vw;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+      scale: 0.8;
+      opacity: 0;
+
+      animation: fadeIn 0.1ms ease forwards;
+      animation-timeline: view();
+      animation-range: contain;
+    }
+
+    section > img.me {
+      position: relative;
+      width: 10vw;
+      /*box-shadow: 0 0 8px 8px white inset;*/
+      z-index: -1;
+    }
+
+    section > h1 {
+      font-size: 2vw;
+    }
+
+    section > p {
+      font-size: 1vw;
+    }
+
+    a:link {
+      color: lightblue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: lightblue;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lightskyblue;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: gray;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    span.email b {
+      display: none;
+    }
+
+  </style>
 </head>
-<body style="background-color: black;">
-    <!-- <div class="bg-image d-flex align-items-center justify-content-center" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); height: 100vh"> -->
-    <div class="bg-image d-flex align-items-center justify-content-center" style="background-image: url('assets/images/decoration/home-bg.jpg'); height: 100vh">
-        <div class="p-2 flex-fill text-end">
-            <h1 class="text-white">
-                hey, I'm Avi
-            </h1>
-            <h5 class="text-light">
-                studying E&amp;ECE at IIT Kharagpur
-            </h5>
-            <h5 class="text-light">
-                machine learning &amp; systems
-            </h5>
-            <h1 class="text-light">
-                <a id="inline" href="#" class="link-secondary">email</a> | <a href="https://www.linkedin.com/in/avi-amalanshu/" class="link-secondary">linkedin</a> | <a href="https://medium.com/@malansh" class="link-secondary">blog</a>
-            </h1>
-        </div>
-        <div class="p-2 flex-fill flex-grow-1 text-start">
-            <p>
-                <button class="btn bg-secondary bg-opacity-10 text-white" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  what brings you here? ▼
-                </button>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card border-0 card-body bg-transparent text-white">
-                    <div class="list-group border-0 bg-transparent">
-                        <a href="home.html" class="list-group-item list-group-item-action border-0 bg-transparent link-secondary">just looking around →</a>
-                        <a href="news.html" class="list-group-item list-group-item-action border-0 bg-transparent link-secondary">news →</a>
-                        <a href="research.html" class="list-group-item list-group-item-action border-0 bg-transparent link-secondary">research →</a>
-                        <a href="https://twitter.com/avi_amalanshu" class="list-group-item list-group-item-action border-0 bg-transparent link-secondary">twitter →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Regrettably, some scripts are necessary :( -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script>
-        var user = "avi.amalanshu";
-        var domain = "kgpian.iitkgp.ac.in";
-        var email = document.getElementById("inline");
-        email.href = `mailto:${user}@${domain}`;
-    </script>
+
+<body>
+
+<nav> <a href="#about">about</a> | <a href="#projects">projects</a> |
+  <a href="#contact">contact</a> | <a href="https://linkedin.com/in/avi-amalanshu">linkedin</a>
+  | <a href="https://twitter.com/avi_amalanshu">twitter</a> | <a href="https://github.com/avi-amalanshu">github</a>
+  | <a href="https://medium.com/@malansh">blog</a> | <a href="cv.pdf">cv</a> </nav>
+
+<header>
+  <img src="assets/images/decoration/kgproof.png" alt=""/>
+  <div class="header-content">
+    <h1>Avi Amalanshu's Website</h1>
+    <p>Welcome. I'm a 5th year masters student studying Vision & Intelligent Systems at IIT Kharagpur.</p>
+    <p>I like computers. I really like computers that learn fast. <a href="cv.pdf">Here is my curriculum vitae.</a></p>
+    <p>Let's get to know each other. Please scroll down, or use the navbar above.</p>
+    <p style="font-size: 0.75vw">You may prefer the <a href="home.html">older, static version of the website</a> if you 
+      suffer from motion sickness.</p>
+  </div>
+</header>
+
+<section id="about">
+  <h1>About Me</h1>
+  <p>
+    I'm an undergrad at <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a>. I'll graduate in 2025 with
+    a B.Tech in ECE and M.Tech in Vision & Intelligent Systems.
+    I'm broadly interested in MLSys. My overarching goal is to develop AI algorithms and systems which are <b>democratic &amp; useable</b>.
+
+    This is me. </p>
+
+    <img src="assets/images/decoration/image.png" class="me" alt=""/>
+
+    <p>
+    I'm currently working on Neuro-Symbolic systems at <a href="https://theairlab.org">AirLab</a>,
+    <a href="https://www.scs.cmu.edu">CMU</a>. Last year I worked on greedy and fault-tolerant distributed deep learning
+      as a SURF 2023 at <a href="https://purdue.edu">Purdue University</a> under
+    <a href="https://www.davidinouye.com/">Prof. David Inouye</a>. My work has been supported by Boeing, the IITKGP
+      Foundation (GKF) and NSF (REU). <br> At IIT, I had a pretty cool bachelor's thesis on fault-tolerant vertical
+      federated learning. I lead the AGV research group on robotic perception (esp. multi-agent stuff). I have also
+      dabbled in information theory.<br><br>
+      In my free time, I code goofy mini-projects, most of which never make it to my GitHub out of embarassment. I enjoy
+      playing and watching sports (especially basketball). I also spread vitriol online through my blog. I've represented
+      IITKGP twice in word games at the collegiate level. Recently, I've taken a liking to competitive programming and CTFs.
+      I did say I liked computers.<br><br>
+      I grew up in the wonderful Hauz Khas, New Delhi, India. During breaks, you'll find me there hanging out with
+      old friends, my parents and the dog. I was born in Baltimore and spent some early years in Santa Clara. I guess
+      that makes me an expat/international student from India's perspective.
+  </p>
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="https://avi-amalanshu.github.io">back (home)</a> &#183; <a href="research.html">detailed statement
+  + interests</a> &#183; <a href="#projects">forth (projects)</a>
+  </p>
+</section>
+
+<section id="projects">
+  <h1>Projects</h1>
+  <p>
+    If you scroll down, you'll find abstracts for some key projects of mine.
+  </p>
+  <p>
+    I should mention that here a "key" project is one that is:
+  </p>
+  <ul>
+    <li>Recent, i.e. within the past year</li>
+    <li>Mid-to-long term, i.e. at least 2 months</li>
+  </ul>
+  <p>
+    They are arranged in reverse chronological order.
+  </p>
+  <p>
+    I have <a href="research.html#projects">a dedicated projects page</a>. There, you will also find projects that don't meet the "key"
+    criteria. You will also find some other junk like course projects there.
+  </p>
+  <p>
+    I've been programming in C/C++ since the 9th grade and Python since my first year of undergrad. I also have a
+    penchant for niche technologies. Sometimes I go out of my way to find cool stuff to implement in unpopular
+    frameworks and languages. But since most of my significant work is related to machine learning, my GitHub is sadly
+    whitewashed in Python.
+  </p>
+  <p>
+    I guess I also kinda familiar with Prolog now, through my work on neurosymbolic systems at CMU. I also know some bash,
+    asm (8051, x86, hopefully some RISC stuff soon) and ostensibly even Verilog. When I get time I want to learn OCaml,
+    Rust and Scala.
+  </p>
+  <p>
+    I'm comfortable with C++'s standard libraries and actively studying some implementations of low-level libraries in C.
+    I also intend to study CUDA programming in the near future. I'm well-versed in the typical ML/data pipeline for Python
+    with PyTorch (including Geometric and Lightning), scikit, Pandas and what have you. I also use some security tools
+    for CTFs like radare2, pwntools and so on.
+  </p>
+  <p>
+    I'd also like to think I'm a good technical writer. I've got a few peer reviewed works under my belt.
+  </p>
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="#about">back (about)</a> &#183; <a href="research.html#projects">more projects</a> &#183;
+    <a href="#AI airport">forth (key project 1: AI airport)</a>
+  </p>
+</section>
+
+<section id="AI airport">
+  <h1>Intent Prediction in Terminal Airspace (May '24 -- ongoing)</h1>
+  <img src="assets/images/proj/boeing.png" alt="Amelia"/>
+  <p>
+    This project is still ongoing. I will update this section once we submit our paper.
+  </p>
+  <p>
+    My work is to advance a project that aims to forecast and analyze aircraft activity at airports. My goal is: given
+    a long and complex natural-language rulebook and a view of the airport, to reliably determine if any rule is about
+    to be broken.
+  </p>
+  <p>
+    Existing work on this project includes a large-scale dataset and a software repository which processes the data,
+    predicts trajectories, performs visualizations and simulations etc. Besides my work on rule-checking, I am also
+    adding a few features to the software repository: semantic grounding for data and semantic-aware trajectory refinement.
+  </p>
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="#projects">back (projects)</a> &#183; <a href="research.html#projects">more projects</a> &#183;
+    <a href="#DVFL">forth (key project 2: dvfl)</a>
+  </p>
+</section>
+<section id="DVFL" style="height: 120vh">
+  <h1>Decoupled Vertical Federated Learning (Aug '23 -- Nov '23)</h1>
+  <img src="assets/images/proj/dvfl-main.svg" alt="DVFL"/>
+  <p>
+    Vertical Federated Learning (VFL) is an emergent distributed machine learning paradigm wherein owners of disjoint
+    features of a common set of entities collaborate to learn a global model without sharing data. In VFL, a host client
+    owns data labels for each entity and learns a final representation based on intermediate local representations from
+    all guest clients. Therefore, the host is a single point of failure and label feedback can be used by malicious
+    guest clients to infer private features. Requiring all participants to remain active and trustworthy throughout the
+    entire training process is generally impractical and altogether infeasible outside of controlled environments. We
+    propose Decoupled VFL (DVFL), a blockwise learning approach to VFL. By training each model on its own objective,
+    DVFL allows for decentralized aggregation and isolation between feature learning and label supervision. With these
+    properties, DVFL is fault-tolerant and secure. We implement DVFL to train split neural networks and show that model
+    performance is comparable to VFL on a variety of classification datasets.
+  </p>
+  <p>
+    This work is currently under peer review. Preprint below (to be revised soon). I also presented an early sketch of
+    the idea at the SURF Symposium at Purdue University.
+  </p>
+  <img src="assets/images/proj/DVFL-cropped.png" style="height: 25vh" alt="my poster"/>
+  <p>
+    This was my Bachelor's thesis. I completed a two-semester track thesis in one. I picked this problem, formulated the
+    solution, designed & programmed the experiments and wrote the paper. Since the thesis submission, I've been trying to
+    add more datasets and models and get it accepted at a conference. Thanks to <a href="https://yashsirvi.github.io">Yash</a>
+    for helping out with some of the legwork since I didn't have as much time during the next semester to do it all alone.
+    Thanks also to Profs. Inouye and <a href="https://sites.google.com/view/rjithin">Jithin R</a> for their valuable guidance.
+  </p>
+  <p><a href="https://arxiv.org/pdf/2403.03871">Report (preprint, under peer review)</a></p>
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="#AI airport">back (key project 1: AI airport)</a> &#183; <a href="research.html#projects">more projects</a> &#183;
+    <a href="#IL">forth (key project 3: internet learning)</a>
+
+  </p>
+</section>
+<section id="IL">
+  <h1>Internet Learning (May '23 -- Jul '23)</h1>
+  <img src="assets/images/proj/IL.png" alt="DVFL"/>
+  <p>
+    Distributed machine learning has grown in popularity due to data privacy, edge computing, and large model training.
+    A subset of this class, Vertical Federated learning (VFL), aims to provide privacy guarantees in the scenario where
+    each party shares the same sample space but only holds a subset of features. While VFL tackles key privacy
+    challenges, it often assumes perfect hardware or communication (and may perform poorly under other conditions).
+    This assumption hinders the broad deployment of VFL, particularly on edge devices, which may need to conserve power
+    and may connect or disconnect at any time. To address this gap, we define the paradigm of Internet Learning (IL),
+    which defines a context, of which VFL is a subset, and puts good performance under extreme dynamic condition of data
+    entities as the primary goal. As IL represents a fundamentally different paradigm, it will likely require novel
+    learning algorithms beyond end-to-end backpropagation, which requires careful synchronization across devices. In
+    light of this, we provide some potential approaches for the IL context and present preliminary analysis and
+    experimental results on a toy problem.
+  </p>
+  <p>
+    This was the first bit of my work as a Summer Undergraduate Research Fellow at Purdue University. I helped Prof.
+    Inouye design and program the experiments, and wrote the appendix and relevant sections of the paper. I also wrote
+    an intermediate revision of the submission from scratch. This work was accepted to an ICML 2023 workshop.
+  </p>
+  <p><a href="https://openreview.net/pdf?id=75PEgr4xTl">Report (ICML'23 LLW)</a></p>
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="#DVFL">back (key project 2: dvfl)</a> &#183; <a href="research.html#projects">more projects</a> &#183;
+    <a href="#contact">contact</a>
+  </p>
+</section>
+<section id="Contact">
+  <h1>Contact Me</h1>
+  <p>My e-mail is <span class="email">avi.amalanshu@kgpian.<b>iitkgp.</b>iitkgp.ac.<b>co.</b>in.<b>.com</b></span>
+    I anticipate your hate mail. </p>
+  <p>My email and <a href="https://linkedin.com/in/avi-amalanshu">LinkedIn</a> are probably the easiest way to
+  get a hold of me.</p>
+  <p>I'm always on the lookout for interesting puzzles and research problems, especially stuff that's interdisciplinary
+    or niche (underappreciated). Let's talk if you have something interesting and can use my contributions. </p>
+  <p>I love handing out advice and mentoring (to the extent that I often do so unsolicited). So feel free to
+    solicit if you're interested! Be it JEE prep, handling acads + research at IIT, and of course, breaking into fields
+    I'm working in.</p>
+  <p><b>I'm graduating in 2025 and I'm looking for opportunities. Please reach out.</b></p>
+
+  <p style="font-size: 0.75vw; text-align: center">
+    <a href="#IL">back (key project 3: internet learning)</a> &#183; <a href="https://avi-amalanshu.github.io">back to
+    top</a>
+  </p>
+  <h2><a href="https://linkedin.com/in/avi-amalanshu">linkedin</a>
+  | <a href="https://twitter.com/avi_amalanshu">twitter</a> | <a href="https://github.com/avi-amalanshu">github</a>
+  | <a href="https://medium.com/@malansh">blog</a> | <a href="cv.pdf">cv</a></h2>
+</section>
 </body>
+
+</html>
