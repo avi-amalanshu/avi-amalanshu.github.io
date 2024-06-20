@@ -41,6 +41,7 @@
       width: 100%;
       height: 100vh;
       overflow-x: clip;
+      position: relative;
     }
 
     @keyframes headerImgFade {
@@ -58,7 +59,7 @@
       z-index: -1;
       animation: headerImgFade 0.1ms linear forwards;
 
-      overflow-x: hidden;
+      overflow-x: clip;
       animation-timeline: view();
       animation-range: exit;
     }
