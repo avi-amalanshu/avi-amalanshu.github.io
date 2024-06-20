@@ -17,11 +17,17 @@
         "wdth" 100;
     }
 
+    @keyframes fadeInFromDark {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     body {
       letter-spacing: normal;
       background-color: black;
       color: white;
       margin: 0;
+      animation: fadeInFromDark ease 1s forwards;
     }
 
     nav {
@@ -73,8 +79,8 @@
       position:relative;
       vertical-align: middle;
       overflow-x: clip;
-      /*padding-block: 7rem;*/
-      /*margin-block-end: 3rem;*/
+      padding-block: 7rem;
+      margin-block-end: 3rem;
       animation: fadeOut 0.1ms linear forwards;
       animation-timeline: view();
       animation-range: exit;
@@ -114,7 +120,7 @@
 
     section > img {
       display: block;
-      max-width: 50vw;
+      max-width: 36vw;
       height: auto;
       margin-left: auto;
       margin-right: auto;
@@ -309,9 +315,9 @@
   <p>
     This work is currently under peer review. Preprint below (to be revised soon). I also presented an early sketch of
     the idea at the SURF Symposium at Purdue University.
-<!--   </p>
+  </p>
   <img src="assets/images/proj/DVFL-cropped.png" style="height: 25vh" alt="my poster"/>
-  <p> -->
+  <p>
     This was my Bachelor's thesis. I completed a two-semester track thesis in one. I picked this problem, formulated the
     solution, designed & programmed the experiments and wrote the paper. Since the thesis submission, I've been trying to
     add more datasets and models and get it accepted at a conference. Thanks to <a href="https://yashsirvi.github.io">Yash</a>
