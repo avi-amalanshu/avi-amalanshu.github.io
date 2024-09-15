@@ -5,16 +5,28 @@
   <meta name="viewport", content="width=device-width", initial-scale=1">
   <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
   <title>Avi Amalanshu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Geologica&family=Noto+Sans+Mono:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     html * {
       box-sizing: border-box;
-      /*scroll-snap-type: y mandatory;*/
-      font-family: "Noto Sans Display", sans-serif;
+      scroll-snap-type: y mandatory;
+      font-family: "Fira Sans Condensed", sans-serif;
+        font-weight: 100;
       font-optical-sizing: auto;
       font-style: normal;
       font-variation-settings:
         "wdth" 100;
+    }
+
+    b {
+      font-weight: 400;
+      font-style: normal;
+      background-color: white;
+      color: black;
     }
 
     @keyframes fadeInFromDark {
@@ -38,7 +50,7 @@
       align-items: center;
       justify-content: center;
       position: sticky;
-      /*backdrop-filter: blur(1rem);*/
+      backdrop-filter: blur(0.1rem);
       top: 0;
       z-index: 1000;
     }
@@ -54,6 +66,12 @@
     @keyframes headerImgFade {
       25% { opacity: 0.4; }
       85%, 100% { opacity: 0; scale: 3; filter: blur(1rem);}
+    }
+
+    h1 {
+      font-family: "Archivo Black", sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     header > img {
@@ -89,14 +107,21 @@
     .header-content > h1 {
       font-size: 5vw;
       text-align: center;
-      text-transform: full-width;
+      /*text-transform: full-width;*/
       color: white;
     }
 
     .header-content > p {
+      font-family: "Noto Sans Mono", monospace;
+      font-weight: 200;
+      font-style: normal;
       font-size: 1.25vw;
+      /*font-family: "Geologica", sans-serif;*/
+      /*font-weight: 200;*/
+      /*font-style: normal;*/
+      /*font-size: 1.5vw;*/
       text-align: center;
-      text-transform: full-width;
+      /*text-transform: full-width;*/
       color: white;
     }
 
@@ -186,11 +211,11 @@
 <header>
   <img src="assets/images/decoration/kgproof.png" alt=""/>
   <div class="header-content">
-    <h1>Avi Amalanshu's Website</h1>
-    <p>Welcome. I'm a 5th year masters student studying Vision & Intelligent Systems at IIT Kharagpur.</p>
-    <p>I like computers. I really like computers that learn fast. <a href="cv.pdf">Here is my curriculum vitae.</a></p>
-    <p>Let's get to know each other. Please scroll down, or use the navbar above.</p>
-    <p style="font-size: 0.75vw">You may prefer the <a href="home.html">older, static version of the website</a> if you
+    <h1>the avi amalanshu lair</h1>
+    <p>welcome. i'm a fifth year masters student studying vision & intelligent systems at IIT Kharagpur.</p>
+    <p>i like computers. i really like computers that learn fast. <a href="cv.pdf" style="font-family: 'Noto Sans Mono', monospace">here is my curriculum vitae.</a></p>
+    <p>let's get to know each other. please scroll down, or use the navbar above.</p>
+    <p style="font-size: 0.75vw">you may prefer the <a href="home.html" style="font-family: 'Noto Sans Mono', monospace">older, static version of the website</a> if you
       suffer from motion sickness.</p>
   </div>
 </header>
@@ -201,7 +226,7 @@
     I'm an undergrad at <a href="http://www.iitkgp.ac.in/">IIT Kharagpur</a>. I'll graduate in 2025 with
     a B.Tech in ECE and M.Tech in Vision & Intelligent Systems.
     I'm broadly interested in MLSys. My overarching goal is to develop AI algorithms and systems which are <b>democratic
-    &amp; usable</b>.
+    &amp; usable</b>. My feeble attempts at doing so thus far have been supported by Boeing, IITKGPF-USA and the NSF.
 
     This is me. </p>
 
@@ -209,20 +234,16 @@
 
     <p>
       I am particularly interested in these closely related avenues towards "democratization and usability":<br><br>
-      <b>Neurosymbolic Programming</b> might imbue AI agents with sufficient System-2 reasoning to learn and generalize
-      from limited samples like we do, and make safe and human-aligned decisions. I think there is vast potential in making
-      life easier for combinatorial solvers with probabilistic modeling & neural heuristics, and bootstrapping decision-making
-      (LLMs, RL) agents with logic programming.<br><br>
+      I see <b>Neurosymbolic Learning</b> as the frontier of ML research. Causal System 2 insight might help models become
+      leaner, generalize from less data and align with human values.<br><br>
       <b>Distributed/Parallel/Pipelined Optimization</b> will allow large-scale participation in ML training and enable
       low-resource users to train their own state-of-the-art models. For that, it is necessary to investigate such
       methods that maximize privacy and tolerate faults.<br><br>
-      <b>Knowledge Distillation</b> is at the intersection of these areas. Distilling some neural components into symbolic
-      code can aid both usability for small-scale/personal & mobile/embedded applications, and interpretability & safety.
-      <br><br>
-      I have had the pleasure of spending my summers with <a href="https://davidinouye.com">Prof. David Inouye</a> at
-      Purdue working on greedy & distributed optimization (funded by NSF) and at <a href="https://theairlab.com">
-      AirLab</a>, CMU working on ILP, LLMs and map-matching (funded by Boeing and IITKGPF). I briefly worked with
-      Prof. Chetan Arora at IIT Delhi on domain adaptation and Prof. Jithin R at IIT KGP on binary hypothesis testing.<br><br>
+
+      I spent my summers with <a href="https://davidinouye.com">Prof. David Inouye</a> at
+      Purdue working on greedy & distributed optimization and at <a href="https://theairlab.com">
+      AirLab</a>, CMU working on ILP, LLMs and map-matching. At KGP, I lead the AGV undergrad group's DL team on
+      scene understanding, IRL and FL.<br><br>
       In my free time, I code goofy mini-projects, most of which never make it to my GitHub out of embarassment. I enjoy
       playing and watching sports (especially basketball). I also spread vitriol online through my blog. I've represented
       IITKGP twice in word games at the collegiate level. Recently, I've taken a liking to competitive programming and CTFs.
