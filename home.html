@@ -7,9 +7,24 @@
         a:link {
             color:#BE0FFF;
         }
+        @font-face {
+            font-family: 'DOS';
+            src: url('assets/fonts/DOS.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        b {
+            color:#BE0FFF
+        }
+        h3 {
+            color:#BE0FFF
+        }
+        pre {
+            font-family: 'DOS', monospace;
+        }
     </style>
 </head>
-<body style="background-color: #000000; color: #00BEFF; font-family: 'Courier New', Courier, monospace;">
+<body style="background-color: #000000; color: #00BEFF; font-family: 'DOS', Courier, monospace;">
 
     <pre>
     ==============================================
@@ -49,7 +64,7 @@
     <pre>
     ==============================================
     ||                                          ||
-    ||           RESEARCH INTERESTS             ||
+    ||            RESEARCH INTERESTS            ||
     ||                                          ||
     ==============================================
     </pre>
@@ -88,8 +103,24 @@
             </td>
             <td valign="top">
                 <h3>An Information-Theoretic Bridge Between Neural and Symbolic AI</h3>
-                <p>My Master's thesis, advised by Prof. Saumik Bhattacharya. Symbolic AI realizes System 2 thinking but
-				typically requires </p>
+                <p>
+                    Neural agents are great at System 1 thinking: fast, intuitive, statistical.
+                    Not so much at System 2 reasoning, which is slow, deliberate and logical.
+                    <br>
+                    <br>
+                    Our brains can learn from remarkably few samples and make interpretable, verifiable decisions based
+                    on sound logical reasoning. The best of foundation models even after being trained on unfathomable
+                    amounts of data are not remotely reliable, even with fancy feedback-loop-chain-of-thought prompt
+                    tricks. So how do we get there?
+                    <br>
+                    Optimizing over discrete logic typically implies a combinatorial search is needed somewhere--
+                    probably NP hard, not good. Can we make things better by using statistical frameworks, differentiable
+                    logic and neural heuristics?
+                    <br>
+                    I intend to present part of this project as my final-year thesis.
+                    <br>
+                    (Under preparation for ICLR 2025 and PLDI 2025 or TOPLAS)
+                </p>
             </td>
         </tr>
         <tr>
@@ -98,7 +129,12 @@
             </td>
             <td valign="top">
                 <h3>Amelia</h3>
-                <p>Developing an immersive VR experience that simulates a cyberpunk cityscape, complete with neon lights, rain-soaked streets, and AI-driven NPCs.</p>
+                <p>
+                    Intent Prediction for Airport Surface Operations.<br><br>
+                    My role in this large-scale Boeing project was to come up with an efficient map-matching algorithm to
+                    induce GIS information into a trajectory prediction model. Also, a way to use English rules via LLM
+                    as a heuristic for procedural bias in Popper, an inductive logic programming algorithm.
+                </p>
             </td>
         </tr>
 		<tr>
@@ -107,7 +143,23 @@
             </td>
             <td valign="top">
                 <h3>Entity Augmentation</h3>
-                <p>Developing an immersive VR experience that simulates a cyberpunk cityscape, complete with neon lights, rain-soaked streets, and AI-driven NPCs.</p>
+                <p>
+                    Imagine a database whose columns belong to different organizations.
+                    <br>
+                    <br>
+                    How do you learn something meaningful in this system? Sure, you could collect all the
+                    features at a central location and use standard machine learning. But what if they don't share?
+                    <br>
+                    Vertical Federated Learning is intricately coordinated. You need to figure out rows everyone knows some features
+                    for (without leaking the keys). Then, on every training iteration you need to arrange matters so that
+                    everyone is passing their features pertaining to the same key, so that the aggregator knows what to
+                    predict.
+                    <br>
+                    <br>
+                    Or, you could just use Entity Augmentation.
+                    <br>
+                    GLOW @ IJCAI 2024 Archival (Under preparation for MLSys 2025)
+                </p>
             </td>
         </tr>
 		<tr>
@@ -116,7 +168,20 @@
             </td>
             <td valign="top">
                 <h3>Decoupled Vertical Federated Learning</h3>
-                <p>Developing an immersive VR experience that simulates a cyberpunk cityscape, complete with neon lights, rain-soaked streets, and AI-driven NPCs.</p>
+                <p>
+                    Vertical Federated Learning is not easy.
+                    <br>
+                    <br>
+                    All it takes is one connection or participant to fail and the whole thing crashes. Also, if one of
+                    your participants is curious, they can learn a lot about others' data from gradients the aggregator
+                    sends them. And of course there's the whole bore of entity alignment (and therefore limitations on
+                    sample size). It's hard enough cross-silo. Forget about scaling up.
+                    <br>
+                    <br>
+                    Try Decoupled Vertical Federated Learning instead.
+                    <br>
+                    arXiv (Under submission at AAAI 2025)
+                </p>
             </td>
         </tr>
 		<tr>
@@ -125,13 +190,57 @@
             </td>
             <td valign="top">
                 <h3>Internet Learning</h3>
-                <p>Developing an immersive VR experience that simulates a cyberpunk cityscape, complete with neon lights, rain-soaked streets, and AI-driven NPCs.</p>
+                <p>
+                    We're wasting the Internet by merely passing data around. Why don't we compute, too?
+                    <br>
+                    <br>
+                    Internet Learning is a paradigm for learning over decentralized networks. Our baseline proposal is
+                    a collaborative backpropagation over the whole network. But you are encouraged to propose something
+                    better.
+                    <br>
+                    Learning on dynamic networks with unreliable and unavailable edge computation is not trivial. Here's
+                    a first step towards fixing that.
+                    <br>
+                    LLW @ ICML 2023
+                </p>
             </td>
         </tr>
     </table>
-	<p>
-		Other Projects:
-	</p>
+    <ul>
+        <li>
+            More Projects:
+            <ul>
+                <li>
+                    Ongoing:
+                    <ul>
+                        <li>
+                            An Information-Theoretic Bridge Between Neural and Symbolic AI
+                        </li>
+
+                        <li>
+                            A Game Theoretic Planner for a F1/Tenth Scale Racing Robot
+                        </li>
+                        <li>
+                            A Neurosymbolic Reinforcement Learning Agent that's Really Good at Minecraft PvP
+                        </li>
+                        <li>
+                            Game Theoretic Differential Privacy Mechanisms
+                        </li>
+                        <li>
+                            Programmatically Verifiable Inverse Reinforcement Learning for Trajectory Prediction
+                        </li>
+                        <li>
+                            Trying To Get Into Grad School (Or At Least A Job)
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Previous: see <a href="index.html#oldprojects">here</a>.
+                </li>
+            </ul>
+        </li>
+    </ul>
+
     <pre>
     ==============================================
     ||                                          ||
@@ -150,6 +259,18 @@
     ==============================================
     ||                                          ||
     ||                 CONTACT                  ||
+    ||                                          ||
+    ==============================================
+    </pre>
+    <ul>
+        <li>
+            See <a href="index.html#contact">here</a>.
+        </li>
+    </ul>
+    <pre>
+    ==============================================
+    ||                                          ||
+    ||        LAST UPDATED: SEP 17 2024         ||
     ||                                          ||
     ==============================================
     </pre>
