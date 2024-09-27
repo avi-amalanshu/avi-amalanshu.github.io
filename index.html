@@ -147,6 +147,17 @@
       align-items: center;
       justify-content: center;
     }
+    
+    section > .smol {
+        font-size: 0.75vw;
+        text-align: center;
+    }
+    
+    @supports (font-size: max(1.25vw, 1.25vh)) {
+      section > .smol {
+        font-size: max(0.75vw, 0.75vh);
+      }
+    }
 
     @keyframes fadeIn {
       to { scale: 1; opacity: 1; }
@@ -278,7 +289,7 @@
       old friends, my parents and the dog. I was born in Baltimore and spent some early years in Santa Clara. I guess
       that makes me an expat/international student from India's perspective.
   </p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="https://avi-amalanshu.github.io">back (home)</a> &#183; <a href="research.html">detailed statement
   + interests</a> &#183; <a href="#papers">forth (papers)</a>
   </p>
@@ -297,7 +308,7 @@
 <!--      <ul> Cock </ul>-->
 <!--    </li>-->
 <!--  </p>-->
-<!--  <p style="font-size: 0.75vw; text-align: center">-->
+<!--  <p class="smol">-->
 <!--    <a href="#about">back (about)</a> &#183;-->
 <!--    <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en">google scholar</a> &#183;-->
 <!--    <a href="#projects">skip papers (to current projects)</a> &#183;-->
@@ -318,7 +329,7 @@
 <!--      <ul> Cock </ul>-->
 <!--    </li>-->
 <!--  </p>-->
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#about">back (about)</a> &#183;
     <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en">google scholar</a> &#183;
     <a href="#projects">skip papers (to current projects)</a> &#183;
@@ -353,7 +364,7 @@
     Thanks also to Profs. Inouye and <a href="https://sites.google.com/view/rjithin">Jithin R</a> for their valuable guidance.
   </p>
   <p><a href="https://arxiv.org/pdf/2403.03871">Report (preprint, under peer review)</a></p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#papers">back (all papers)</a> &#183;
     <a href="#projects">skip papers (to current projects)</a> &#183;
     <a href="#EntityAug">forth (paper 2: entity augmentation)</a>
@@ -377,7 +388,7 @@
     In fact, thanks to the regularizing effect, our model performs marginally better even with 100% overlap.
   </p>
   <p><a href="https://arxiv.org/abs/2406.17899">Report (IJCAI '24 GLOW, Archival)</a></p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#DVFL">back (paper 1: dvfl)</a> &#183; 
     <a href="#papers">all papers</a> &#183;
     <a href="#projects">skip papers (to current projects)</a> &#183;
@@ -406,7 +417,7 @@
     an intermediate revision of the submission from scratch. This work was accepted to an ICML 2023 workshop.
   </p>
   <p><a href="https://openreview.net/pdf?id=75PEgr4xTl">Report (ICML'23 LLW)</a></p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#EntityAug">back (paper 2: entity augmentation)</a> &#183;
     <a href="#papers">all papers</a> &#183;
     <a href="#projects">skip papers (to current projects)</a> &#183;
@@ -434,7 +445,7 @@
     upon state-of-the-art performance for both short and long prediction horizon settings.
   </p>
   <p><a href="https://openreview.net/pdf?id=HV2zgpM7n0F">Report (ReScience C Vol. 8 No. 3)</a></p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#IL">back (paper 3: internet learning)</a> &#183;
     <a href="#papers">all papers</a> &#183;
     <a href="#projects">forth (current projects)</a> &#183;
@@ -454,7 +465,7 @@
   <p>
     Please scroll down or use the links below to navigate/skip.
   </p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#MLRC">back (mlrc)</a> &#183;
     <a href="https://www.github.com/avi-amalanshu">github</a> &#183;
     <a href="#oldprojects">skip current projects (to more projects)</a> &#183;
@@ -478,7 +489,7 @@
     predicts trajectories, performs visualizations and simulations etc. Besides my work on rule-checking, I am also
     adding a few features to the software repository: semantic grounding for data and semantic-aware trajectory refinement.
   </p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#papers">back (all projects)</a> &#183;
     <a href="#DVFL">forth (current project 2: mcpvpnesyrl)</a>
   </p>
@@ -503,7 +514,7 @@
     Minecraft PvPer and allow the model to learn its parameters in order to help the policy zone in on the "intricate"
     PvP mechanics).
   </p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#papers">back (current project 1: info theory nesy learning)</a> &#183; <a href="#projects">all projects</a> &#183;
     <a href="#DVFL">forth (current project 3: inverse rl traj pred)</a>
   </p>
@@ -524,7 +535,7 @@
   <p>
     And, can we predict paths using the learned reward map that are performant on typical trajectory forecasting benchmarks?
   </p>
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#papers">back (current project 2: mcpvprl)</a> &#183; <a href="#projects">all projects</a> &#183;
     <a href="#DVFL">forth (more projects)</a>
   </p>
@@ -711,7 +722,7 @@
     I'm working in.</p>
   <p><b>I'm graduating in 2025 and I'm looking for opportunities. Please reach out.</b></p>
 
-  <p style="font-size: 0.75vw; text-align: center">
+  <p class="smol">
     <a href="#IL">back (key project 3: internet learning)</a> &#183; <a href="https://avi-amalanshu.github.io">back to
     top</a>
   </p>
