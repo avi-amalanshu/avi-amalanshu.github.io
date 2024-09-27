@@ -119,27 +119,37 @@
     .header-content > p {
       font-family: "Noto Sans Mono", monospace;
       font-weight: 200;
-      font-style: normal;
       font-size: 1.25vw;
-      /*font-family: "Geologica", sans-serif;*/
-      /*font-weight: 200;*/
-      /*font-style: normal;*/
-      /*font-size: 1.5vw;*/
+      font-style: normal;
       text-align: center;
-      /*text-transform: full-width;*/
       color: white;
+    }
+
+    .header-content > .smol {
+        font-size: 0.75vw;
+      }
+
+    @supports (font-size: max(1.25vw, 1.25vh)) {
+      .header-content > p {
+        font-size: max(1.25vw, 1.25vh);
+      }
+      .header-content > .smol {
+        font-size: max(0.75vw, 0.75vh);
+      }
     }
 
     section {
       block-size: 100%;
       width: 60%;
       min-height: 100vh;
+      height: 1px;
       margin: 0 auto;
       vertical-align: middle;
       /*scroll-snap-align: start;*/
       /*scroll-snap-stop: always;*/
 
       /*display: flex;*/
+      /*overflow-y: auto;*/
       align-items: center;
       justify-content: center;
     }
@@ -224,8 +234,14 @@
     <p>welcome. i'm a fifth year masters student studying vision & intelligent systems at IIT Kharagpur.</p>
     <p>i like computers. i really like computers that learn fast. <a href="cv.pdf" style="font-family: 'Noto Sans Mono', monospace">here is my curriculum vitae.</a></p>
     <p>let's get to know each other. please scroll down, or use the navbar above.</p>
-    <p style="font-size: 0.75vw">on mobile? got motion sickness? prefer retro? try the
-      <a href="home.html" style="font-family: 'Noto Sans Mono', monospace">static version of the website</a>.</p>
+    <p class="smol">
+<!--      <div class="smol">-->
+        on mobile? got motion sickness? prefer retro? try the
+          <a href="home.html" style="font-family: 'Noto Sans Mono', monospace">
+            static version of the website
+          </a>.
+<!--      </div>-->
+    </p>
   </div>
 </header>
 
