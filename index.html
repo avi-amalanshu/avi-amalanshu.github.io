@@ -229,8 +229,13 @@
 
 <body>
 
-<nav> <a href="#about">about</a> | <a href="#papers">papers</a> | <a href="#projects">projects now</a> | <a href="#oldprojects">projects then</a> |
-  <a href="#contact">reach me</a> | <a href="#fun">fun</a> | <a href="https://github.com/avi-amalanshu">github</a> | <a href="cv.pdf">cv</a> </nav>
+<nav>
+  <a href="#about">about</a> |
+  <a href="#work">work</a> |
+  <a href="#play">play</a> |
+  <a href="#contact">reach me</a> |
+  <a href="https://github.com/avi-amalanshu">github</a> |
+  <a href="cv.pdf">cv</a> </nav>
 
 <header>
   <img src="assets/images/decoration/kgproof.png" alt=""/>
@@ -275,7 +280,7 @@
 
     <p>
       Supported by an NSF REU, I went on to work on greedy and distributed learning with Prof. <a href="https://davidinouye.com/">David Inouye</a> at Purdue, which is a research arc I 
-      brought back to AGV. Thanks to support from Boeing and the IITKGP USA Foundation, I also worked on <a href="http://ameliacmu.github.io">Amelia</a> 
+      brought back to AGV. Enabled by support from Boeing and the IITKGP Foundation USA, I also worked on <a href="http://ameliacmu.github.io">Amelia</a>
       at CMU’s RI, writing fast map-matching algorithms and hacking away at LLM-logic feedback loops. For my 5th year M.Tech project I worked with 
       Prof. Saumik Bhattacharya on probabilistic symbolic representations and conformal prediction.
     </p>
@@ -286,7 +291,7 @@
   </p>
   <p class="smol">
     <a href="https://avi-amalanshu.github.io">back (home)</a> &#183; <a href="research.html">detailed statement
-  + interests</a> &#183; <a href="#papers">forth (papers)</a>
+  + interests</a> &#183; <a href="#work">forth (work)</a>
   </p>
 </section>
 <!--<section id="blog">-->
@@ -295,7 +300,7 @@
 <!--    If you scroll down, you'll find abstracts for my publications so far.-->
 <!--  </p>-->
 <!--  <p>-->
-<!--    This includes most of my conference papers, journal papers, workshop papers, preprints.-->
+<!--    This includes most of my conference work, journal papers, workshop papers, preprints.-->
 <!--  </p>-->
 <!--  <p>-->
 <!--    Here is a list of papers with links to jump to their dedicated pages:-->
@@ -310,13 +315,23 @@
 <!--    <a href="#DVFL">forth (paper 1: DVFL)</a>-->
 <!--  </p>-->
 <!--</section>-->
-<section id="papers">
-  <h1>Papers</h1>
+<section id="work">
+  <h1>Work</h1>
+  <img src="assets/images/decoration/workplaceholder.png" alt="workheader"/>
   <p>
-    If you scroll down, you'll find abstracts for my publications so far.
+    I'll update this section as I take up projects in grad school. If you are interested in my earlier
+    work (mostly on MLSys and robot perception), please consult my
+    <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en">Google Scholar profile</a>.
   </p>
   <p>
-    This includes most of my conference papers, journal papers, workshop papers, preprints.
+    For smaller and not yet-published projects, click <a href="home.html#projects">here</a>.
+  </p>
+  <p>
+    For samples of my code, check out my
+    <a href="https://github.com/avi-amalanshu">GitHub profile</a>. It doesn't have the best of my work
+    (let alone all of it), but there's something. Sadly, as things have turned out, my GitHub is Python dominant
+    (and even has some MATLAB! 🤮). Amongst the languages I am proficient at, Python is certainly
+    my least favorite. I prefer C++ and am dabbling in some functional declarative langs (Lisp, Haskell and OCaml).
   </p>
 <!--  <p>-->
 <!--    Here is a list of papers with links to jump to their dedicated pages:-->
@@ -327,388 +342,33 @@
   <p class="smol">
     <a href="#about">back (about)</a> &#183;
     <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en">google scholar</a> &#183;
-    <a href="#projects">skip papers (to current projects)</a> &#183;
-    <a href="#DVFL">forth (paper 1: DVFL)</a>
-  </p>
-</section>
-<section id="DVFL">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Papers</span> > Decoupled Vertical Federated Learning</h1>
-  <img src="assets/images/proj/dvfl-main.svg" alt="DVFL"/>
-  <p>
-    <b>Abstract:</b> Vertical Federated Learning (VFL) is an emergent distributed machine learning paradigm wherein owners of disjoint
-    features of a common set of entities collaborate to learn a global model without sharing data. In VFL, a host client
-    owns data labels for each entity and learns a final representation based on intermediate local representations from
-    all guest clients. Therefore, the host is a single point of failure and label feedback can be used by malicious
-    guest clients to infer private features. Requiring all participants to remain active and trustworthy throughout the
-    entire training process is generally impractical and altogether infeasible outside of controlled environments. We
-    propose Decoupled VFL (DVFL), a blockwise learning approach to VFL. By training each model on its own objective,
-    DVFL allows for decentralized aggregation and isolation between feature learning and label supervision. With these
-    properties, DVFL is fault-tolerant and secure. We implement DVFL to train split neural networks and show that model
-    performance is comparable to VFL on a variety of classification datasets.
-  </p>
-  <p>
-    This work is currently under peer review. Preprint below (to be revised soon). I also presented an early sketch of
-    the idea at the SURF Symposium at Purdue University.
-  </p>
-  <img src="assets/images/proj/DVFL-cropped.png" alt="my poster"/>
-  <p>
-    This was my Bachelor's thesis. I completed a two-semester track thesis in one. I picked this problem, formulated the
-    solution, designed & programmed the experiments and wrote the paper. Since the thesis submission, I've been trying to
-    add more datasets and models and get it accepted at a conference. Thanks to <a href="https://yashsirvi.github.io">Yash</a>
-    for helping out with some of the legwork since I didn't have as much time during the next semester to do it all alone.
-    Thanks also to Profs. Inouye and <a href="https://sites.google.com/view/rjithin">Jithin R</a> for their valuable guidance.
-  </p>
-  <p><a href="https://arxiv.org/pdf/2403.03871">Report (preprint, under peer review)</a></p>
-  <p class="smol">
-    <a href="#papers">back (all papers)</a> &#183;
-    <a href="#projects">skip papers (to current projects)</a> &#183;
-    <a href="#EntityAug">forth (paper 2: entity augmentation)</a>
-  </p>
-</section>
-<section id="EntityAug">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Papers</span> > Entity Augmentation</h1>
-  <img src="assets/images/proj/vfl_fedvision.drawio-1-1-2.pdf" alt="Entity Augmentation" style="filter: invert(100%);"/>
-  <p>
-    <b>Abstract:</b> Vertical Federated Learning (VFL) is a machine learning paradigm for learning from vertically partitioned data
-    (i.e. features for each input are distributed across multiple "guest" clients and an aggregating "host" server owns
-    labels) without communicating raw data. Traditionally, VFL involves an "entity resolution" phase where the host
-    identifies and serializes the unique entities known to all guests. This is followed by private set intersection
-    to find common entities, and an "entity alignment" step to ensure all guests are always processing the same entity's
-    data. However, using only data of entities from the intersection means guests discard potentially useful data.
-    Besides, the effect on privacy is dubious and these operations are computationally expensive. We propose a novel
-    approach that eliminates the need for set intersection and entity alignment in categorical tasks. Our Entity
-    Augmentation technique generates meaningful labels for activations sent to the host, regardless of their
-    originating entity, enabling efficient VFL without explicit entity alignment. With limited overlap between training
-    data, this approach performs substantially better (e.g. with 5% overlap, 48.1% vs 69.48% test accuracy on CIFAR-10).
-    In fact, thanks to the regularizing effect, our model performs marginally better even with 100% overlap.
-  </p>
-  <p><a href="https://arxiv.org/abs/2406.17899">Report (IJCAI '24 GLOW, Archival)</a></p>
-  <p class="smol">
-    <a href="#DVFL">back (paper 1: dvfl)</a> &#183; 
-    <a href="#papers">all papers</a> &#183;
-    <a href="#projects">skip papers (to current projects)</a> &#183;
-    <a href="#IL">forth (paper 3: internet learning)</a>
-  </p>
-</section>
-<section id="IL">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Papers</span> > Internet Learning</h1>
-  <img src="assets/images/proj/IL.png" alt="IL" style="filter: invert(100%);"/>
-  <p>
-    <b>Abstract:</b> Distributed machine learning has grown in popularity due to data privacy, edge computing, and large model training.
-    A subset of this class, Vertical Federated learning (VFL), aims to provide privacy guarantees in the scenario where
-    each party shares the same sample space but only holds a subset of features. While VFL tackles key privacy
-    challenges, it often assumes perfect hardware or communication (and may perform poorly under other conditions).
-    This assumption hinders the broad deployment of VFL, particularly on edge devices, which may need to conserve power
-    and may connect or disconnect at any time. To address this gap, we define the paradigm of Internet Learning (IL),
-    which defines a context, of which VFL is a subset, and puts good performance under extreme dynamic condition of data
-    entities as the primary goal. As IL represents a fundamentally different paradigm, it will likely require novel
-    learning algorithms beyond end-to-end backpropagation, which requires careful synchronization across devices. In
-    light of this, we provide some potential approaches for the IL context and present preliminary analysis and
-    experimental results on a toy problem.
-  </p>
-  <p>
-    This was the first bit of my work as a Summer Undergraduate Research Fellow at Purdue University. I helped Prof.
-    Inouye design and program the experiments, and wrote the appendix and relevant sections of the paper. I also wrote
-    an intermediate revision of the submission from scratch. This work was accepted to an ICML 2023 workshop.
-  </p>
-  <p><a href="https://openreview.net/pdf?id=75PEgr4xTl">Report (ICML'23 LLW)</a></p>
-  <p class="smol">
-    <a href="#EntityAug">back (paper 2: entity augmentation)</a> &#183;
-    <a href="#papers">all papers</a> &#183;
-    <a href="#projects">skip papers (to current projects)</a> &#183;
-    <a href="#MLRC">forth (paper 4: ynet transfer and reproduction)</a>
-  </p>
-</section>
-<section id="MLRC">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Papers</span> > Reproducibility and Transfer Learning
-  of the YNet Paper</h1>
-  <img src="assets/images/proj/MLRC.png" alt="MLRC"/>
-  <p>
-    Won Machine Learning Reproducibility Challenge 2022. Accepted to ReScience C and invited to NeurIPS 2022 special
-    reproducibility track poster session. Successfully reproduced the results and showed significant transfer learning
-    abilities.
-  </p>
-  <p>
-    <b>Abstract:</b> Human trajectory forecasting is an inherenty multimodal problem. Uncertainty in future trajectories stems from two
-    sources: (a) sources that are known to the agent but unknown to the model, such as long term goals and (b) sources
-    that are unknown to both the agent & the model, such as intent of other agents & irreducible randomness in decisions.
-    This stochasticity is modelled in two major ways: the epistemic uncertainity which accounts for the multimodal nature
-    of the long term goals and the aleatoric uncertainity which accounts for the multimodal nature of the waypoints.
-    Furthermore, the paper extends the existing prediction horizon to up to a minute. The aforementioned features are
-    encompassed into Y-Net, a scene compliant trajectory forecasting network. The network has been implemented on the
-    following datasets : (a) Stanford Drone (SDD) (b) ETH/UCY (c) Intersection Drone. The network significantly improves
-    upon state-of-the-art performance for both short and long prediction horizon settings.
-  </p>
-  <p><a href="https://openreview.net/pdf?id=HV2zgpM7n0F">Report (ReScience C Vol. 8 No. 3)</a></p>
-  <p class="smol">
-    <a href="#IL">back (paper 3: internet learning)</a> &#183;
-    <a href="#papers">all papers</a> &#183;
-    <a href="#projects">forth (current projects)</a> &#183;
-  </p>
-</section>
-<section id="projects">
-  <h1>Current Projects</h1>
-  <p>
-    In this section you'll find projects that I'm hacking away at right now.
-  </p>
-  <p>
-    <b>What to expect here</b>: My personal projects are pretty heavily influenced by my research interests. Usually
-    there'll be deployments or integrations of topics I'm researching with other stuff I find interesting. There is
-    also a slightly heavier systems bent here because I love toying with systems and I am a bit of a security/privacy
-    nut.
-  </p>
-  <p>
-    Please scroll down or use the links below to navigate/skip.
-  </p>
-  <p class="smol">
-    <a href="#MLRC">back (mlrc)</a> &#183;
-    <a href="https://www.github.com/avi-amalanshu">github</a> &#183;
-    <a href="#oldprojects">skip current projects (to more projects)</a> &#183;
-    <a href="#DVFL">forth (project 1: info theory nesy learning)</a>
-  </p>
-</section>
-<section id="mtp">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Ongoing Projects</span> > Bridging the
-  Neurosymbolic Gap using Information Theory</h1>
-  <img src="assets/images/proj/mtp.png" alt="MTP"/>
-  <p>
-    This project is still ongoing. I will update this section once we submit our paper.
-  </p>
-  <p>
-    My work is to advance a project that aims to forecast and analyze aircraft activity at airports. My goal is: given
-    a long and complex natural-language rulebook and a view of the airport, to reliably determine if any rule is about
-    to be broken.
-  </p>
-  <p>
-    Existing work on this project includes a large-scale dataset and a software repository which processes the data,
-    predicts trajectories, performs visualizations and simulations etc. Besides my work on rule-checking, I am also
-    adding a few features to the software repository: semantic grounding for data and semantic-aware trajectory refinement.
-  </p>
-  <p class="smol">
-    <a href="#papers">back (all projects)</a> &#183;
-    <a href="#DVFL">forth (current project 2: mcpvpnesyrl)</a>
-  </p>
-</section>
-<section id="minepvprl">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Ongoing Projects</span> > Symbolic + RL Minecraft PvP Agent</h1>
-  <img src="assets/images/proj/pvp.png" alt="pvp"/>
-  <p>
-    Performing fixed tasks in the open-world sandbox game Minecraft is a popular benchmark for RL agents. As someone who
-    used to enjoy a spot of Minecraft as a kid, I had the fantastic idea of training an agent to do a slightly more difficult
-    but fun task: PvP combat.
-  </p>
-  <p>
-    This is a slightly more challenging task than, say, the MineRL benchmark. Firstly, our goal is to learn purely from
-    visual + input data, viz. without using the internal game state. Second of all, Minecraft PvP dynamics are a little
-    weird, and the agent needs to learn a very specific technique from an open-ended and continuous search space.
-  </p>
-  <p>
-    I had originally started this project when I was home during the pandemic, and had to give it up because I
-    couldn't bring my PC to campus when offline class restarted. Now, I am armed with more money (so I can go back home
-    occasionally to hack away at this project) and insight (I want to try imparting symbolic primitives as an expert
-    Minecraft PvPer and allow the model to learn its parameters in order to help the policy zone in on the "intricate"
-    PvP mechanics).
-  </p>
-  <p class="smol">
-    <a href="#papers">back (current project 1: info theory nesy learning)</a> &#183; <a href="#projects">all projects</a> &#183;
-    <a href="#DVFL">forth (current project 3: inverse rl traj pred)</a>
-  </p>
-</section>
-<section id="irl">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">Ongoing Projects</span> >
-    Trajectory Prediction using Inverse Reinforcement Learning</h1>
-  <img src="assets/images/proj/irl.jpg" alt="irl"/>
-  <p>
-    Trajectory Prediction has become a benchmark task with the ostensible goal of deployment in autonomous vehicles. But
-    are models that get the best ADE/FDE really the best for downstream tasks such as path planning?
-  </p>
-  <p>
-    We wish to investigate two prongs: given an environment that evolves based on some probabilistic logic, can an inverse
-    RL agent extract the logic? If not exactly, how far are real trajectories from those rolled-out by the discovered logic?
-    Further, can we use the logic (or better yet, the whole reward map) to learn a better planner than the SotA forecasting methods?
-  </p>
-  <p>
-    And, can we predict paths using the learned reward map that are performant on typical trajectory forecasting benchmarks?
-  </p>
-  <p class="smol">
-    <a href="#papers">back (current project 2: mcpvprl)</a> &#183; <a href="#projects">all projects</a> &#183;
-    <a href="#DVFL">forth (more projects)</a>
+    <a href="#play">forth (play)</a>
   </p>
 </section>
 
-<section id="oldprojects">
-  <h1>More Projects</h1>
-  <p>
-    I have done far too many silly little projects to list. In this section [WIP], I'm going to enumerate some of the
-    more interesting ones that didn't appear above. These include unsubmitted research projects, personal projects and a
-    smattering of course projects.
-  </p>
-   <p>
-    <b>What to expect here:</b> I've been programming in C/C++ since the 8th grade and Python since my first year of undergrad. I also have a
-    penchant for niche technologies. Sometimes I go out of my way to find cool stuff to implement in unpopular
-    frameworks and languages. But since most of my significant work is related to machine learning, my GitHub is sadly
-    whitewashed in Python.
-  </p>
-  <p>
-    I guess I also kinda familiar with Prolog now. I also know some bash,
-    asm (8051, x86, hopefully some RISC stuff soon) and ostensibly even Verilog. When I get time I want to get better at
-    OCaml, Rust and Scala.
-  </p>
-  <p>
-    I'm comfortable with C++'s standard libraries and actively studying some implementations of low-level libraries in C.
-    I also intend to study CUDA programming in the near future. I'm well-versed in the typical ML/data pipeline for Python
-    with PyTorch (including Geometric and Lightning), scikit, Pandas and what have you. I also use some security tools
-    for CTFs like radare2, pwntools and so on.
-  </p>
-  <p>
-    I'd also like to think I'm a good technical writer. I've got a few peer reviewed works under my belt.
-  </p>
-</section>
-<section id="oldprojectscontent">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">More Projects</span> > Research, Competitions,
-  OSS, Personal</h1>
-    <ul>
-      <li>
-        <b>Research & Competitions</b> (excluding published projects, see <a href="#papers">Papers</a>):
-        <ol>
-          <li><b>[Fall '24] Inter-IIT Tech</b>:
-            Won gold at the Inter-IIT Tech Meet in 2024. Helped develop an optimized foundation model-based approach to
-            open-world SLAM. Helped implement an explanation classifier for AI-generated images.
-          </li>
-          <li><b>[AGV Fall '24] Game Theoretic Planner for an F1/tenth Scale Robot</b>:
-            Systems-level optimization (mainly focused on getting a good non-convex solver to work real-time our old
-            NVIDIA Jetson) for a game-theoretic planner. Plan to enter the F1/tenth competition at ICRA 2025.
-          </li>
-          <li><b>[CMU Summer '24] Amelia: Intent Prediction for Airport Surface Operations</b>: Designed some fast map
-          matching algorithms, developed a LLM-based procedural bias heuristic for Inductive Logic Programming based on an English
-          description.
-          </li>
-          <li><b>[IITKGP March '24] Goodness of Fit in Distributed Binary Detection</b>:
-            Conducted a literature search of recent results on sample complexity in communication-constrained binary
-            detection. Derived some elementary corollaries for GoF when there are 2 inferrers.
-          </li>
-          <li><b>[IITD Winter '23] Domain Adaptation for Breast Cancer Detection in Indian mammograms</b>:
-            Wrote some internal scripts and analyzed their outputs to help diagnose the poor transfer performance of
-            SotA object detection algorithms when transferring to Indian mammogram data.
-            Helped implement focal modulation and designed an appropriate masking strategy.
-          </li>
-          <li><b>[AGV Fall '22] Machine Learning Reproducibility Challenge 2023</b>:
-            Lead two teams of juniors on MLRC 2023, reproduced results from the papers of CLRNet and the other thing.
-            Conducted lit review. Helped design ablation study, edited report for CLRNet. Designed experiments on
-            computational efficiency for the other one.
-          </li>
-          <li><b>[AGV Summer '22] ECCV 2022 Visual Inductive Priors for Data-Efficient Deep Learning Challenge</b>:
-            Tried to piecemeal tweak some baselines to achieve data efficient object detection. The best model that could
-            fit on our limited compute got us 10th place out of 63 teams.
-          </li>
-        </ol>
-      </li>
-      <li>
-        <b>Personal & Open-Source</b> (recent only):
-        <ol>
-          <li><b>Automation services and scripts for secure RDP access to a shared desktop computer</b>
-          </li>
-          <li><b>A VLM finetuned on Minecraft Texture Packs</b>
-          </li>
-          <li><b>A trajectory generator for experiments in neurosymbolic learning</b></li>
-        </ol>
-      </li>
-    </ul>
-  Continued in the next section. Please scroll.
-</section>
-<section id="oldprojectsmorecontent">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">More Projects</span> > OSS, Personal, Coursework</h1>
-    <ul>
-      <li>
-        <b>Personal & Open-Source</b> (select only):
-        <ol start="4">
-          <li><b>A case study on IP grabbers</b>
-          </li>
-          <li><b>A survey of game theoretic approaches to differential privacy</b> (sadly someone had already done the
-            idea I had, but... fun read)
-          </li>
-          <li><b>This website</b> :)
-          </li>
-        </ol>
-      </li>
-    </ul>
-  <ul>
-      <li>
-        <b>Course Projects</b>:
-        <ol>
-          <li><b>[CS60081 Fall '24] Usable Security and Privacy</b>: <i>TBD</i>
-          </li>
-          <li><b>[EC61205 Fall '24] Communication Networks</b>: <i>TBD</i>
-          </li>
-          <li><b>[CS60112 Spring '24] Information and System Security</b>: <i>CTF Challenge</i>:
-            Participated in a large number of CTFs ranging from simple PHP query injection attacks to convoluted use-after-free
-            heap tricks.
-          </li>
-          <li><b>[EC60012 Spring '24] Advanced Operating System Design</b>: <i>Elements of a Distributed System</i>:
-            Used system calls to re-implement inter process communication, a rudimentary file system and read/write/copy
-            functions, user-level process migration (using CRIU) and Maekawa's Algorithm.
-          </li>
-          <li><b>[EC61xxx Spring '24] Deep Learning</b>: <i>SVD-LoRA</i>:
-            Implemented LoRA for finetuning. Proposed a new initialization strategy using SVD.
-          </li>
-          <li><b>[CS60077 Fall '23] Reinforcement Learning</b>: <i>Dynamic Gridworld</i>:
-            Implemented a few online RL algorithms and deep RL algorithms for navigating a gridworld in a
-            particular manner (the right manner remaining unspecified to the agent-- only rewarded). Showed that it
-            does not work thanks to the sparsity of valid transitions, and that it does when learning from an expert.
-          </li>
-        </ol>
-      </li>
-    </ul>
-  Continued in the next section. Please scroll.
-</section>
-<section id="oldprojectsevenmorecontent">
-  <h1><span style="color: gray; font-family: 'Archivo Black', sans-serif">More Projects</span> > Coursework</h1>
-  <ul>
-      <li>
-        <b>Course Projects</b>:
-        <ol start="7">
-          <li><b>[EC60007 Fall '23] Computational Neuroscience</b>: <i>Neural Signal Processing in MATLAB</i>:
-            Conducted a wide variety of modelling and simulation experiments on real data, from the Hodgkin-Huxley and
-            Morris-Lecar equations to extracting maximally informative dimensions.
-          </li>
-          <li><b>[CS60050 Spring '23] Machine Learning</b>: <i>Various benchmark tasks</i>:
-            <ul>
-              <li>Rice Variety Classificaiton using Naive Bayes Classifier</li>
-              <li>Heart Disease Detection using Support Vector Machines</li>
-              <li>K-means clustering vs. Single-Linkage Top-Down Agglomerative Clustering</li>
-            </ul>
-          </li>
-          <li><b>[EC60004 Spring '23] Neuronal Coding of Sensory Information</b>: <i>Processing Cat Auditory System Signals in MATLAB</i>:
-            Analyzing discrimination in cat auditory nerve fiber responses to tones and speech
-          </li>
-          <li><b>[EC39002 Spring '23] Embedded Systems Lab</b>: <i>Temperature Controller on an 8051</i>:
-            Wrote a temperature controller in Assembly for an 8051 which turns a fan on whenever a thermometer reading
-            crosses a certain threshold and off vice versa.
-          </li>
-          <li><b>[CS60092 Spring '22] Information Retrieval</b>: <i>I forgot</i>:
-            I honestly can't for the life of me remember what I did and I didn't upload it to GitHub.
-          </li>
-          <li><b>[CS61603 Fall '21] Computational Foundations of Cyber-Physical Systems</b>: <i>Differential Privacy in a Smart Grid</i>:
-            Implemented a smart grid in MATLAB-Simulink, ran simulations, added Gaussian noise-based differential privacy
-            and re-ran those experiments. (In retrospect, I don't remember why it was Gaussian. Laplace might have made
-            more sense).
-          </li>
-          <li><b>[DY17003 Fall '20] DIY Project</b>: <i>Gesture-Controlled Medical Robot</i>:
-            Used pretrained models from MediaPipe and developed a sign language to control a robot. Sent control signals
-            over WiFi to an Raspberry Pi robot.
-          </li>
-        </ol>
-      </li>
-    </ul>
-  Continued in the next section. Please scroll.
-</section>
-<section id="fun">
-  <h1>Fun: Misc stuff</h1>
+<section id="play">
+  <h1>Play</h1>
+  <img src="assets/images/decoration/funplaceholder.png" alt="workheader"/>
   <p>
     <ul>
-      <li>My <a href="reading-list">reading list</a>. Everything from texts, monographs, proceedings, papers, fiction, nonfiction...</li>
+      <li>
+        My <a href="reading-list">reading list</a>.
+        Everything from texts, monographs, proceedings, papers, fiction, nonfiction...</li>
+      <li>
+        My <a href="http://medium.com/@malansh">blog</a>.
+        Not necessarily technical or even academic. (Though I might spin off dedicated nerd blogs too).
+      </li>
+      <li>
+        Vandalize my GitHub profile by starring
+        <a href="https://github.com/avi-amalanshu/avi-amalanshu/">ts repository</a>.
+      </li>
     </ul>
   </p>
+  <p class="smol">
+    <a href="#work">back (work)</a> &#183;
+    <a href="#contact">forth (contact)</a>
+  </p>
+
 </section>
 <section id="contact">
   <h1>Online Presence</h1>
@@ -718,18 +378,17 @@
   get a hold of me.</p>
   <p>I also have a <a href="https://twitter.com/avi_amalanshu">Twitter (avi_amalanshu)</a> but I don't really use it.</p>
   <p>Check out <a href="https://medium.com/@malansh">my blog: malansh on Medium</a>. I plan to start writing on it again
-    when I'm a little more free, say Winter 2024. Topics I have in mind cover a mix of general advice, opinion pieces,
-  and academic nerdery. (Information Geometry, anyone?)</p>
+    when I recover from my recent (as of May '25) surgeries.</p>
   <p>I'm always on the lookout for interesting puzzles and research problems, especially stuff that's interdisciplinary
     or niche (underappreciated). Let's talk if you have something interesting and can use my contributions. </p>
   <p>I love handing out advice and mentoring (to the extent that I often do so unsolicited). So feel free to
     solicit if you're interested! Be it JEE prep, handling acads + research at IIT, and of course, breaking into fields
-    I'm working in.</p>
-  <p><b>I'm graduating in 2025 and I'm looking for opportunities. Please reach out.</b></p>
+    I'm working in. Folks who have taken my
+    advice are doing great and folks who ignore it are invariably suffering. </p>
 
   <p class="smol">
-    <a href="#IL">back (key project 3: internet learning)</a> &#183; <a href="https://avi-amalanshu.github.io">back to
-    top</a>
+    <a href="#play">back (play)</a> &#183;
+    <a href="#">to top</a>
   </p>
   <h2><a href="https://linkedin.com/in/avi-amalanshu">linkedin</a>
   | <a href="https://twitter.com/avi_amalanshu">twitter</a> | <a href="https://github.com/avi-amalanshu">github</a>
