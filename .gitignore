@@ -30,3 +30,7 @@ dist/
 .env
 .env.local
 .env.*.local
+assets/images/decoration/.DS_Store
+assets/images/.DS_Store
+assets/.DS_Store
+.idea/vcs.xml
