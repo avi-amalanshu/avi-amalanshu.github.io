@@ -1,0 +1,32 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+.Spotlight-V100
+.Trashes
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Build and cache directories
+node_modules/
+.cache/
+dist/
+.temp/
+
+# Environment files
+.env
+.env.local
+.env.*.local
