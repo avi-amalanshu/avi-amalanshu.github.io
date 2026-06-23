@@ -120,7 +120,8 @@
     </pre>
     <p>
         <ul>
-            <li>For my publications and research work, please visit my <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</li>
+            <li>Please visit my <a href="https://scholar.google.com/citations?user=uxaD7gUAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</li>
+            <li>Some submissions are not yet archived as preprints; those are mentioned in-line in the projects section.</li>
         </ul>
     </p>
 
@@ -133,6 +134,160 @@
     </pre>
 
     <table width="100%" border="1" cellspacing="0" cellpadding="5" style="border-color:#BE00FF;" id="projects">
+        <tr>
+            <td width="30%" valign="top">
+                <img src="assets/images/proj/dpe.png"
+                     alt="dpe"
+                     style="
+                        /*filter: invert(100%);*/
+                        display:block;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                ">
+            </td>
+            <td valign="top">
+                <h3>Deep Preemptive Exploration</h3>
+                <p>
+                    We pose exploration and exploitation in stochastic, controllable settings as a problem
+                    of experimental design. 
+                    <br>
+                    <br>
+                    One problem, though-- the experimental design toolkit demands you compute and marginalize log likelihoods under
+                    your model. And your model is a neural network if your setting is complicated enough.
+                    <br>
+                    <br>
+                    This obstacle is more pervasive than you might realize. It is a generic form of 'expected log density ratio'
+                     (ELDR) estimation. We analytically characterize this problem at large and suggest some novel algorithms. 
+                     In the other direction, we consider what happens when we do have black-box ELDR or LDR estimation-- 
+                     how do we optimize our policy without succumbing to LDR_hat != LDR bias?
+                    <ul>
+                        <li>Under submission (NeurIPS 2026)</li>
+                        <li>Under submission (NeurIPS 2026 Evaluation & Benchmarks Track)</li>
+                        <li>Under preparation (2026)</li>
+                        <li>Possible spin-off under preparation (2026-27)</li>
+                    </ul>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" valign="top">
+                <img src="assets/images/proj/contextures.png"
+                     alt="contextures"
+                     style="
+                        filter: invert(100%);
+                        display:block;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                ">
+            </td>
+            <td valign="top">
+                <h3>Contextures</h3>
+                <p>
+                    Recent results show that learning correspondences reduces to spectral decomposition of an implicit kernel
+                    over the input-context space. Most prior work analyzes a single context variable, matching the typical
+                    approach for natural data, e.g. unsupervised pretraining with data augmentations in computer vision,
+                    autoregressive modeling in natural language processing, and supervised finetuning.
+                    <br>
+                    <br>
+                    For structured data, practitioners typically rely on heuristics to compose various sources of context 
+                    and structure. Can we derive a more principled treatment for multi-context representation learning?
+                    <br>
+                    <br>
+                    Manuscript under preparation. (2026)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" valign="top">
+                <img src="assets/images/proj/conformalized.png"
+                     alt="conformal"
+                     style="
+                        filter: invert(100%);
+                        display:block;
+                        max-width: 57%;
+                        max-height: 100%;
+                        height: auto;
+                        margin: 0 auto;
+                ">
+            </td>
+            <td valign="top">
+                <h3>Conformalized Robustness for CNNs</h3>
+                <p>
+                    Exchangeability is somewhat unusual. Conformal prediction, especially in typical neural-net
+                     settings like image classification, often uses the stronger and more brittle i.i.d. assumption.
+                    <br>
+                    <br>
+                    If you know a priori the modalities of perturbations you wish to be robust to, plain exchangeability is
+                    actually easier to enforce than you might realize. We show this for visual tasks on CNNs, 
+                    and use that principle to encourage conformal calibration during train and test time. 
+                    <br>
+                    <br>
+                    We further show the saliency of the features exposed by our train-time calibration by using it 
+                    as a self-supervised pre-training signal.
+                    <br>
+                    <br>
+                    10-707: Advanced Deep Learning (S26) course project. Extended manuscript under prep.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" valign="top">
+                <img src="assets/images/proj/review-bot.png"
+                     alt="review-bot"
+                     style="
+                        /*filter: invert(100%);*/
+                        display:block;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                ">
+            </td>
+            <td valign="top">
+                <h3>review-bot</h3>
+                <p>
+                    <ol>
+                        <li>
+                            MCP-driven RAG + Claude code skills/hooks pipeline that simulates reviews for
+                            paper submissions given traces of reviews/rebuttals at a representative venue.
+                        </li>
+                        <li>
+                            SFT routine for small LLMs to specialize in review/rebuttal simulation.
+                        </li>
+                    </ol>
+                    Private, available upon request. (If you are worthy...)
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="30%" valign="top">
+                <!-- <img src="assets/images/proj/dpe.png"
+                     alt="citetools"
+                     style="
+                        /*filter: invert(100%);*/
+                        display:block;
+                        max-width: 100%;
+                        max-height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                "> -->
+            </td>
+            <td valign="top">
+                <h3>citetools</h3>
+                <p>
+                    Live collection of literature review tools. Currently implemented: connecting papers between
+                    user-defined cliques of seed papers. (Various traversal modes, including using sentence embeddings
+                    as heuristics).
+                    <br>
+                    <br>
+                    GitHub repository: <a href="github.com/avi-amalanshu/citetools">click</a>.
+                </p>
+            </td>
+        </tr>
         <tr>
             <td width="30%" valign="top">
                 <img src="assets/images/proj/mtp.png"
@@ -165,7 +320,7 @@
                     probably NP hard, not good. Can we make things better by modeling probabilistic logical distributions?
                     <br>
                     <br>
-                    Manuscript under preparation.
+                    Final-year thesis, IIT Kharagpur.
                 </p>
             </td>
         </tr>
@@ -189,6 +344,9 @@
                     My role in this large-scale Boeing project was to come up with an efficient map-matching algorithm to
                     induce GIS information into a trajectory prediction model. Also, a way to use English rules via LLM
                     as a heuristic for procedural bias in Popper, an inductive logic programming system.
+                    <br>
+                    <br>
+                    Summer Research, Robotics Institute, CMU
                 </p>
             </td>
         </tr>
@@ -247,10 +405,10 @@
                     All it takes is one connection or participant to fail and the whole thing crashes. Also, if one of
                     your participants is curious, they can learn a lot about others' data from gradients the aggregator
                     sends them. And of course there's the whole bore of entity alignment (and therefore limitations on
-                    sample size). It's hard enough cross-silo. Forget about scaling up.
+                    sample size). It's hard enough cross-silo. Much less scaled up cross-device.
                     <br>
                     <br>
-                    Try Decoupled Vertical Federated Learning instead.
+                    Decoupled Vertical Federated Learning is immune to these.
                     <br>
                     arXiv (short version in SSL @ NIPS 2024)
                 </p>
@@ -279,7 +437,7 @@
                     a collaborative backpropagation over the whole network. But you are encouraged to propose something
                     better.
                     <br>
-                    Learning on dynamic networks with unreliable and unavailable edge computation is not trivial. Here's
+                    Learning on dynamic networks with unreliable and unavailable edge computation is not trivial. This work is
                     a first step towards fixing that.
                     <br>
                     LLW @ ICML 2023
@@ -289,15 +447,7 @@
     </table>
     <ul>
         <li>
-            More Projects:
-            <ul>
-                <li>
-                    Ongoing: top secret!
-                </li>
-                <li>
-                    Previous: see <a href="workarchive.html">here</a>.
-                </li>
-            </ul>
+            <a href="workarchive.html">The Archives</a>
         </li>
     </ul>
 
@@ -328,7 +478,7 @@
     <pre>
     ==============================================
     ||                                          ||
-    ||       LAST UPDATED: MAY 25 2026          ||
+    ||       LAST UPDATED: JUN 23 2026          ||
     ||                                          ||
     ==============================================
     </pre>
